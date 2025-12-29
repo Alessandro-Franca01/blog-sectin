@@ -9,12 +9,10 @@ import About from './views/About';
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<PageView>(PageView.HOME);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="min-h-screen flex flex-col bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark font-display">
 
-      {/* Sticky Header */}
       {/* Sticky Header */}
       <Header
         onMenuClick={() => setIsSidebarOpen(true)}
